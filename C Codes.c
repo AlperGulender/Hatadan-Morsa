@@ -38,7 +38,7 @@ void sayidanmorsacevir(const char *dosya_adi) {
                     fputs("--... ",mors);
                     break;
                 case '8':
-                    fputs("---..",mors);
+                    fputs("---.. ",mors);
                     break;
                 case '9':
                     fputs("----. ",mors);
