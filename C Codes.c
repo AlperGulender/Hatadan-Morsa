@@ -7,7 +7,7 @@ void sayidanmorsacevir(const char *dosya_adi) {
     hata = fopen(dosya_adi, "r");
     mors = fopen("Mors.txt", "a");
 
-    if (hata == NULL) {
+    if (hata == NULL || mors==NULL) {
         printf("Sistem HATA verdi: Dosya bulunamadi veya acilamadi.\n");
     } else {
         while ((okusun = getc(hata)) != EOF) {
